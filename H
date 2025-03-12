@@ -1,0 +1,94 @@
+
+=begin
+
+Functions are great for when the pattern of notes (sleeps) and the actual notes are exactly the same.
+
+Parameterized functions are great for when:
+a. the pattern of notes is the same but the actual notes are different!
+b. two chunks of code are almost identical but have a few slight differences!
+
+YOUR TASK: Use a parameterized function to optimize the code below.
+
+=end
+
+use_bpm 120
+use_synth :chiplead
+
+define :notez do |note1, note2|
+  play note1
+  play note2
+  sleep 0.5
+end
+
+
+# MEASURE 1 ---------------------------
+notez :a4, :a5
+
+notez :a4, :a5
+
+notez :c5, :c6
+
+notez :a4, :a5
+
+notez :d5, :d6
+
+notez :a4, :a5
+
+notez :e5, :e6
+
+notez :d5, :d6
+
+
+
+# MEASURE 2 ---------------------------
+notez :c5, :c6
+
+notez :c5, :c6
+
+notez :e5, :e6
+
+notez :c5, :c6
+
+notez :g5, :g6
+
+notez :c4, :c5
+
+notez :e5, :e6
+
+notez :c4, :c5
+
+
+# MEASURE 3 ---------------------------
+notez :g4, :g5
+
+notez :g4, :g5
+
+notez :b4, :b5
+
+notez :g4, :g5
+
+notez :c5, :c6
+
+notez :g4, :g5
+
+notez :d5, :d6
+
+notez :c5, :c6
+
+
+# MEASURE 4 ---------------------------
+notez :f4, :f5
+
+notez :f4, :f5
+
+notez :a4, :a5
+
+notez :f4, :f5
+
+notez :c5, :c6
+
+notez :f4, :f5
+
+notez :c5, :c6
+
+notez :b4, :b5
